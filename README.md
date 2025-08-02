@@ -64,7 +64,6 @@ ng serve --proxy-config proxy.conf.json
 
 ```
 
-Would you like this committed as your initial `README.md` file in the GitHub `cartcraft` repo, or do you want a version with badges and contributor guidelines too?
 
 
 ## 📂 Folder Structure
