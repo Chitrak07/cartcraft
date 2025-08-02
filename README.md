@@ -2,37 +2,54 @@
 
 CartCraft is a solo-built full-stack eCommerce platform built using **Java Spring Boot**, **React.js**, and **PostgreSQL**. It follows Agile methodology with real-world features like user authentication, cart, admin panel, and payment integration.
 
----
 
-## 🚀 Tech Stack
+## 🔧 Tech Stack
 
-### 🔧 Backend
-- Java 17 + Spring Boot 3
-- Spring Security + JWT
-- Spring Data JPA + Hibernate
-- PostgreSQL
-- Maven
+- Backend: Java 17, Spring Boot 3, Maven, JWT
+- Frontend: React.js, TailwindCSS
+- Database: PostgreSQL
+- Auth: JWT (Spring Security)
+- Payments: Razorpay Integration
+- DevOps: GitHub Actions (CI), Docker (optional)
+- Deployment: AWS EC2 / Render / Railway
 
-### 🎨 Frontend
-- React.js + Tailwind CSS
-- Axios + React Router DOM
-- Context API (or Redux Toolkit optional)
+## 🗂️ Modules
 
-### 💳 Other Integrations
-- Razorpay / Stripe (Payment Gateway)
-- AWS or Render (Deployment)
-- GitHub Projects (Agile Workflow)
+- User Registration & Login (JWT)
+- Product Catalog (Admin Add/Edit/Delete)
+- Shopping Cart
+- Checkout & Orders
+- Payment Gateway Integration
+- Admin Dashboard
+- Order History & Invoices
 
----
+## 📅 Timeline
 
-## 📁 Folder Structure
+> Development begins Aug 2025. Target: Nov 30, 2025
+
+## 📂 Folder Structure
 
 cartcraft/
-├── backend/ # Spring Boot app
-└── frontend/ # React app
+
+├── backend/
+
+│ └── spring-boot-app/
+
+├── frontend/
+
+│ └── react-app/
+
+└── docs/
+
+└── user-stories.md
 
 
----
+
+## 📜 License
+
+MIT License © 2025 Shubham Vaish
+
+
 
 ## 🔄 Agile Workflow
 
