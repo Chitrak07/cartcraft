@@ -27,3 +27,21 @@ CartCraft is a solo-built full-stack eCommerce platform built using **Java Sprin
 
 ## 📁 Folder Structure
 
+cartcraft/
+├── backend/ # Spring Boot app
+└── frontend/ # React app
+
+
+---
+
+## 🔄 Agile Workflow
+
+This project follows agile development with weekly deliverables from Aug to Nov 2025. Tasks are tracked via GitHub Projects.
+
+---
+
+## 👨‍💻 Author
+
+Shubham Vaish  
+Software Engineer | Full Stack Developer
+
