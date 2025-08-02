@@ -5,8 +5,19 @@ CartCraft is a solo-built full-stack eCommerce platform built using **Java Sprin
 
 ## 🔧 Tech Stack
 
-- Backend: Java 17, Spring Boot 3, Maven, JWT
-- Frontend: React.js, TailwindCSS
+### Backend (Spring Boot 3.5.4 + Java 21)
+- Spring Web, Spring Data JPA
+- PostgreSQL
+- Spring Security & JWT (for auth)
+- Stripe/Razorpay Payment Gateway
+- Maven build system
+
+### Frontend (Angular)
+- Angular 17+
+- SCSS Styling
+- Angular Routing
+- RxJS & HTTPClient for API calls
+  
 - Database: PostgreSQL
 - Auth: JWT (Spring Security)
 - Payments: Razorpay Integration
@@ -26,23 +37,41 @@ CartCraft is a solo-built full-stack eCommerce platform built using **Java Sprin
 ## 📅 Timeline
 
 > Development begins Aug 2025. Target: Nov 30, 2025
+>
+> 
+## 🔧 Features Planned
+
+- 🧾 User registration, login (JWT-based)
+- 🛍️ Product listing, search, filter
+- 🛒 Add to cart, manage cart
+- 💳 Payment gateway integration
+- 📦 Order summary & history
+- 🛡️ Role-based admin panel (product & order management)
+
+## 📅 Development Plan (Agile)
+This project is being built solo over weekends with a deadline of **30 November 2025**, using Agile practices (GitHub Project board, milestones, weekly goals).
+
+## 🧪 Local Development
+
+### 🖥 Backend
+```bash
+cd backend
+./mvnw spring-boot:run
+
+cd frontend
+ng serve --proxy-config proxy.conf.json
+
+
+---
+
+Would you like this committed as your initial `README.md` file in the GitHub `cartcraft` repo, or do you want a version with badges and contributor guidelines too?
+
 
 ## 📂 Folder Structure
 
 cartcraft/
-
-├── backend/
-
-│ └── spring-boot-app/
-
-├── frontend/
-
-│ └── react-app/
-
-└── docs/
-
-└── user-stories.md
-
+├── backend/ → Java Spring Boot (API, DB, Auth, Payments)
+└── frontend/ → Angular App (UI, Services, Routes)
 
 
 ## 📜 License
