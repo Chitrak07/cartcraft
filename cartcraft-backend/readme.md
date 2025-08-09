@@ -1,22 +1,24 @@
-For Postman/Angular:
-Use /users/api/... endpoints — they respond in JSON.
-Example:
+Access URLs
+JSP UI
+List: http://localhost:8081/jsp/users
 
-GET: http://localhost:8081/users/api
+Create form: http://localhost:8081/jsp/users/create
 
-POST: http://localhost:8081/users/api (raw JSON body)
+Edit form: http://localhost:8081/jsp/users/edit/{id}
 
-PUT: http://localhost:8081/users/api/{id}
+REST API (Postman/Angular)
+GET http://localhost:8081/api/users
 
-DELETE: http://localhost:8081/users/api/{id}
+GET http://localhost:8081/api/users/{id}
 
-For JSP browser UI:
-Use /users/... endpoints — they render JSP views.
-Example:
+POST http://localhost:8081/api/users
 
-http://localhost:8081/users → Shows all users
+PUT http://localhost:8081/api/users/{id}
 
-http://localhost:8081/users/create → Create form
+DELETE http://localhost:8081/api/users/{id}
 
-http://localhost:8081/users/edit/{id} → Edit form
+
+
+
+
 <img width="992" height="523" alt="image" src="https://github.com/user-attachments/assets/831cc4f9-1fa7-467d-a715-8bbe27140fe6" />
