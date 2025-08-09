@@ -6,7 +6,12 @@
 <body>
 <h2>Edit User</h2>
 
-<form action="/jsp/users/edit/${user.id}" method="post">
+<%-- Change the action attribute in the line below --%>
+<form action="/jsp/users/update/${user.id}" method="post">
+    <%--
+      You can remove this hidden input now, as the controller
+      is correctly using @PostMapping.
+    --%>
     <input type="hidden" name="_method" value="put"/>
 
     <label>Name:</label><br/>

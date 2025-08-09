@@ -6,7 +6,7 @@
 <body>
 <h2>Create User</h2>
 
-<form action="/jsp/users/create" method="post">
+<form action="/jsp/users" method="post">
     <label>Name:</label><br/>
     <input type="text" name="name" required/><br/><br/>
 
