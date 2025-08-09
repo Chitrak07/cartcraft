@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba393ac2-012f-49d0-88c9-b828098f40ae" name="Changes" comment="Added automatic timestamp handling in User entity using @PrePersist and @PreUpdate.&#10;Ensured createdAt is set only once and cannot be updated, while updatedAt changes on every update.&#10;Refactored service layer to remove manual timestamp handling.">
+      <change beforePath="$PROJECT_DIR$/../../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/CartCraftApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/controller/HealthCheckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/java/com/cartcraft/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/main/webapp/WEB-INF/jsp/create-user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cartcraft-backend/src/test/java/com/cartcraft/CartCraftApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../feature_request.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Chitrak07&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Chitrak07/cartcraft.git&quot;,
+    &quot;accountId&quot;: &quot;78941073-5066-4fec-b010-624873a95e55&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="30kS5oT9SZilMGD3SsKyl5QzAOr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CartCraftApplication.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "JUnit.All in cartcraft-backend (1).executor": "Run",
+    "JUnit.All in cartcraft-backend.executor": "Run",
+    "JUnit.Whole project.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Code/CartCraft/cartcraft/cartcraft-backend",
+    "settings.editor.selected.configurable": "terminal"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\CartCraft\cartcraft\cartcraft-backend\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CartCraftApplication">
+    <configuration name="CartCraftApplication" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
+      <envs>
+        <env name="DB_PASSWORD" value="testpass" />
+        <env name="DB_USERNAME" value="cartcraftdb" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.cartcraft.CartCraftApplication" />
+      <module name="cartcraft-backend" />
+      <option name="PASS_PARENT_ENVS" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="cartcraft-backend" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CartCraftApplication" />
+      <item itemvalue="JUnit.Whole project" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Whole project" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba393ac2-012f-49d0-88c9-b828098f40ae" name="Changes" comment="" />
+      <created>1754169897095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754169897095</updated>
+    </task>
+    <task id="LOCAL-00001" summary="++ application.yml">
+      <option name="closed" value="true" />
+      <created>1754171389891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754171389891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP: Setup PostgreSQL and verified app is running">
+      <option name="closed" value="true" />
+      <created>1754177638751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1754177638751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="++ User Controller, Service for basic CRUD operations">
+      <option name="closed" value="true" />
+      <created>1754232130923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754232130923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added automatic timestamp handling in User entity using @PrePersist and @PreUpdate.&#10;Ensured createdAt is set only once and cannot be updated, while updatedAt changes on every update.&#10;Refactored service layer to remove manual timestamp handling.">
+      <option name="closed" value="true" />
+      <created>1754747493771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754747493771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="++ application.yml" />
+    <MESSAGE value="WIP: Setup PostgreSQL and verified app is running" />
+    <MESSAGE value="++ User Controller, Service for basic CRUD operations" />
+    <MESSAGE value="Added automatic timestamp handling in User entity using @PrePersist and @PreUpdate.&#10;Ensured createdAt is set only once and cannot be updated, while updatedAt changes on every update.&#10;Refactored service layer to remove manual timestamp handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added automatic timestamp handling in User entity using @PrePersist and @PreUpdate.&#10;Ensured createdAt is set only once and cannot be updated, while updatedAt changes on every update.&#10;Refactored service layer to remove manual timestamp handling." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cartcraft_backend$CartCraftApplication.ic" NAME="CartCraftApplication Coverage Results" MODIFIED="1754752304137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
