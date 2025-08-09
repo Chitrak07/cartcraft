@@ -53,3 +53,23 @@ Delete a User:
 DELETE http://localhost:8081/api/users/{id} (e.g., http://localhost:8081/api/users/1)
 
 <img width="992" height="523" alt="image" src="https://github.com/user-attachments/assets/831cc4f9-1fa7-467d-a715-8bbe27140fe6" />
+
+User Overview
+
+<img width="1918" height="910" alt="image" src="https://github.com/user-attachments/assets/b8632081-e528-45b1-bda4-53eec4a64de4" />
+
+Create New User
+
+<img width="1909" height="927" alt="image" src="https://github.com/user-attachments/assets/4c7e4596-a31a-4a7e-b159-cb4c721fec93" />
+
+Edit User
+
+<img width="1903" height="904" alt="image" src="https://github.com/user-attachments/assets/f30f83c4-7722-4ed0-83eb-7fb36e2b3240" />
+
+Delete
+
+<img width="1914" height="837" alt="image" src="https://github.com/user-attachments/assets/8cb67f36-b693-4958-836f-4d4e289df2e2" />
+
+
+
+
