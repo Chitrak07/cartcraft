@@ -7,37 +7,35 @@ import com.cartcraft.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
 /**
- * Implementation of the UserService interface.
- * Handles business logic and interacts with the repository.
+ * Service implementation for managing User entities.
+ * Handles business logic and delegates DB operations to UserRepository.
  */
 @Service
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-    /**
-     * Constructor injection of UserRepository.
-     */
     @Autowired
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     /**
-     * Save a new user to the database.
+     * Create a new user.
+     * The createdAt and updatedAt timestamps are automatically set by the entity.
      */
     @Override
     public User createUser(User user) {
+        user.setId(null); // Let DB handle ID generation
         return userRepository.save(user);
     }
 
     /**
-     * Find a user by ID using Optional.
+     * Get a user by ID.
      */
     @Override
     public Optional<User> getUserById(Long id) {
@@ -45,7 +43,7 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * Return a list of all users from the database.
+     * Get all users.
      */
     @Override
     public List<User> getAllUsers() {
@@ -54,30 +52,30 @@ public class UserServiceImpl implements UserService {
 
     /**
      * Update an existing user.
-     * If a user with a given ID doesn't exist, throw an exception.
+     * Only name, email, and password are updated.
+     * createdAt is ignored even if provided in request.
      */
     @Override
     public Optional<User> updateUser(Long id, User updatedUser) {
         return userRepository.findById(id).map(existingUser -> {
-            // Update fields manually
             existingUser.setName(updatedUser.getName());
             existingUser.setEmail(updatedUser.getEmail());
             existingUser.setPassword(updatedUser.getPassword());
-            existingUser.setUpdatedAt(LocalDateTime.now());
-
+            // updatedAt is automatically updated by @PreUpdate
             return userRepository.save(existingUser);
         });
     }
 
-
     /**
      * Delete a user by ID.
-     *
-     * @return
+     * Returns true if user existed and was deleted.
      */
     @Override
     public boolean deleteUser(Long id) {
-        userRepository.deleteById(id);
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return true;
+        }
         return false;
     }
 }

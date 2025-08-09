@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -18,10 +18,12 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 logging:
   level:
     org.springframework: INFO
     com.cartcraft: DEBUG
+    org.hibernate.SQL: DEBUG                # Show SQL queries
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # Show query parameter bindings
+

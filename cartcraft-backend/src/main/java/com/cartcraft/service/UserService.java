@@ -1,6 +1,7 @@
 package com.cartcraft.service;
 
 import com.cartcraft.entity.User;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -11,6 +12,7 @@ public interface UserService {
 
     /**
      * Creates and saves a new user.
+     *
      * @param user User object to save
      * @return Saved User
      */
@@ -18,6 +20,7 @@ public interface UserService {
 
     /**
      * Retrieves a user by ID.
+     *
      * @param id ID of the user
      * @return Optional containing User if found
      */
@@ -25,6 +28,7 @@ public interface UserService {
 
     /**
      * Retrieves all users.
+     *
      * @return List of all users
      */
     List<User> getAllUsers();
