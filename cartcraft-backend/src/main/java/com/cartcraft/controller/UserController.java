@@ -25,6 +25,7 @@ public class UserController {
         return "user-list"; // resolves to /WEB-INF/views/user-list.jsp
     }
 
+
     @GetMapping("/jsp/users/create")
     public String showCreateForm(Model model) {
         model.addAttribute("user", new User());
