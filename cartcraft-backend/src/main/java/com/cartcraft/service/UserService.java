@@ -9,7 +9,7 @@ import java.util.Optional;
  * Service interface for managing User operations.
  */
 public interface UserService {
-
+    List<User> getAllUsers(String keyword, String sortField, String sortDir);
     /**
      * Creates and saves a new user.
      *

@@ -4,6 +4,7 @@ import com.cartcraft.entity.User;
 import com.cartcraft.repository.UserRepository;
 import com.cartcraft.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -16,14 +17,27 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+    // REPLACE the old getAllUsers() method with this one
     @Override
-    public List<User> getAllUsers() {
-        return userRepository.findAll();
+    public List<User> getAllUsers(String keyword, String sortField, String sortDir) {
+        Sort sort = Sort.by(sortField);
+        sort = sortDir.equals("asc") ? sort.ascending() : sort.descending();
+
+        if (keyword != null && !keyword.isEmpty()) {
+            return userRepository.search(keyword, sort);
+        }
+        return userRepository.findAll(sort);
     }
 
+    // ... rest of the methods remain the same
     @Override
     public Optional<User> getUserById(Long id) {
         return userRepository.findById(id);
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return List.of();
     }
 
     @Override

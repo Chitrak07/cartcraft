@@ -1,0 +1,230 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- NEW: Modern Color Palette --- */
+:root {
+    --primary-dark: #2c3e50;    /* Deep Charcoal Blue for Header/Footer */
+    --primary-accent: #3498db;   /* Bright Blue for links and highlights */
+    --saffron-accent: #FF9933;   /* Saffron for specific highlights */
+    --light-grey-bg: #f8f9fa;
+    --text-color: #34495e;
+    --white-color: #ffffff;
+    --success-green: #27ae60;
+    --danger-red: #c0392b;
+    --card-bg-color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- General Body and Background Styling --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--light-grey-bg);
+    background-image: url('../images/background-pattern.png');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- NEW: Header with Charcoal Color and Bigger Logo --- */
+.header {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- NEW: Bigger, Dynamic Logo --- */
+.logo-container img {
+    height: 50px; /* Increased logo size */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for dynamic effect */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1) rotate(-5deg); /* Logo grows and tilts slightly on hover */
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+/* --- Main Content Container --- */
+.container {
+    flex: 1;
+    padding: 30px 40px;
+}
+
+/* --- Modern Card Layout --- */
+.card {
+    background: var(--card-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    font-size: 2em;
+    color: var(--primary-dark);
+    border-bottom: 3px solid var(--primary-accent); /* Blue accent line */
+    padding-bottom: 15px;
+    margin: 0 0 30px 0;
+}
+
+/* --- Modern Form Styling --- */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+form input:focus {
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+    outline: none;
+}
+
+/* --- Button Styling --- */
+.button-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn {
+    color: var(--white-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary { background-color: var(--primary-accent); }
+.btn-success { background-color: var(--success-green); }
+
+.link-secondary {
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+/* --- Modern Table Styling --- */
+.create-link {
+    display: inline-block;
+    background-color: var(--primary-accent);
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+.create-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modern-table th, .modern-table td {
+    padding: 18px;
+    text-align: left;
+}
+
+.modern-table thead {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    font-size: 1.1em;
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.modern-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-accent);
+}
+
+.modern-table tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.modern-table .action-link {
+    font-weight: 600;
+    text-decoration: none;
+}
+.modern-table .edit { color: var(--primary-accent); }
+.modern-table .delete { color: var(--danger-red); }
+
+/* --- NEW: Footer --- */
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* --- ADD THESE NEW STYLES AT THE END OF modern-style.css --- */
+
+.modern-table thead a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.modern-table thead a:hover {
+    color: var(--saffron-accent); /* Saffron highlight on hover */
+}
+
+.sort-arrow {
+    font-size: 0.8em;
+    position: relative;
+    top: -1px;
+}

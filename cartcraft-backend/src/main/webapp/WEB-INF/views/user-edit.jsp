@@ -2,30 +2,36 @@
 <html>
 <head>
     <title>Edit User - CartCraft</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/modern-style.css">
 </head>
 <body>
 
 <div class="header">
-    <h1>🛒 CartCraft Admin</h1>
+    <div class="logo-container">
+        <img src="${pageContext.request.contextPath}/images/logo.png" alt="CartCraft Logo">
+        <h1>CartCraft Admin</h1>
+    </div>
 </div>
 
 <div class="container">
-    <div class="form-container">
+    <div class="card">
         <h2>Edit User #${user.id}</h2>
         <form action="/jsp/users/update/${user.id}" method="post">
-            <label>Name:</label>
-            <input type="text" name="name" value="${user.name}" required/>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="${user.name}" required/>
 
-            <label>Email:</label>
-            <input type="email" name="email" value="${user.email}" required/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="${user.email}" required/>
 
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="Enter new password if changing" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter new password to change" />
 
             <div class="button-container">
-                <button type="submit" class="update-btn">Update User</button>
-                <a href="/jsp/users">Back to List</a>
+                <button type="submit" class="btn btn-primary">Update User</button>
+                <a href="/jsp/users" class="link-secondary">Cancel</a>
             </div>
         </form>
     </div>

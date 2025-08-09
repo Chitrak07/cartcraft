@@ -20,9 +20,18 @@ public class UserController {
     // -------------------- JSP ROUTES --------------------
 
     @GetMapping("/jsp/users")
-    public String listUsers(Model model) {
-        model.addAttribute("users", userService.getAllUsers());
-        return "user-list"; // resolves to /WEB-INF/views/user-list.jsp
+    public String listUsers(Model model,
+                            @RequestParam(defaultValue = "") String keyword,
+                            @RequestParam(defaultValue = "id") String sortField,
+                            @RequestParam(defaultValue = "asc") String sortDir) {
+
+        model.addAttribute("users", userService.getAllUsers(keyword, sortField, sortDir));
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("sortField", sortField);
+        model.addAttribute("sortDir", sortDir);
+        model.addAttribute("reverseSortDir", sortDir.equals("asc") ? "desc" : "asc");
+
+        return "user-list";
     }
 
 
