@@ -12,7 +12,7 @@ CartCraft is a solo-built full-stack eCommerce platform built using **Java Sprin
 - Stripe/Razorpay Payment Gateway
 - Maven build system
 
-### Frontend (Angular)
+### Frontend (Angular) (Future)
 - Angular 17+
 - SCSS Styling
 - Angular Routing
